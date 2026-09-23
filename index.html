@@ -7,7 +7,7 @@
   <title>Faithfuldistribution | Produits naturels à Dakar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,8 +16,8 @@
       <img src="logo-faithful.jpeg" alt="Logo Faithfuldistribution">
       <span>Faithful<em>distribution</em></span>
     </a>
-    <button class="menu-button" aria-label="Afficher le menu" aria-expanded="false">☰</button>
-    <nav class="navigation">
+    <button class="menu-button" id="menuToggle" aria-label="Afficher le menu" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation">
       <a href="#produits">Produits</a>
       <a href="#apropos">Notre engagement</a>
       <a class="button small" href="#contact">Nous contacter</a>
@@ -32,12 +32,19 @@
         <p>Faithfuldistribution sélectionne et distribue des produits naturels et généreux pour les familles, restaurants et revendeurs.</p>
         <a class="button" href="#produits">Découvrir nos produits <span>→</span></a>
       </div>
-      <div class="hero-pattern" aria-hidden="true"><div class="hero-circle"></div><span>✦</span><b>Naturel<br>&amp; choisi</b></div>
+      <div class="hero-pattern" aria-hidden="true">
+        <div class="hero-circle"></div>
+        <span>✦</span>
+        <b>Naturel<br>&amp; choisi</b>
+      </div>
     </section>
 
     <section class="products-section" id="produits">
       <div class="section-title">
-        <div><p class="overline">Notre gamme</p><h2>Nos produits</h2></div>
+        <div>
+          <p class="overline">Notre gamme</p>
+          <h2>Nos produits</h2>
+        </div>
         <p>Chaque photo est placée dans une zone dédiée : le produit est intégralement visible, quel que soit son format.</p>
       </div>
 
@@ -79,16 +86,37 @@
 
     <section class="about" id="apropos">
       <div class="about-mark">F<span>✦</span></div>
-      <div><p class="overline">L’esprit Faithful</p><h2>Une distribution qui reste proche de l’essentiel.</h2><p>Nous mettons à votre disposition des produits de qualité, aux saveurs sincères, avec un service fiable et attentif à Dakar.</p></div>
-      <div class="pillars"><p><b>01</b> Produits sélectionnés</p><p><b>02</b> Saveurs authentiques</p><p><b>03</b> Service de proximité</p></div>
+      <div>
+        <p class="overline">L’esprit Faithful</p>
+        <h2>Une distribution qui reste proche de l’essentiel.</h2>
+        <p>Nous mettons à votre disposition des produits de qualité, aux saveurs sincères, avec un service fiable et attentif à Dakar.</p>
+      </div>
+      <div class="pillars">
+        <p><b>01</b> Produits sélectionnés</p>
+        <p><b>02</b> Saveurs authentiques</p>
+        <p><b>03</b> Service de proximité</p>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-      <div><p class="overline">Nous contacter</p><h2>Une question ou une commande ?</h2><p>Notre équipe est à votre écoute.</p></div>
-      <div class="contact-links"><a href="mailto:faithfuldistribution@gmail.com"><small>Écrivez-nous</small>faithfuldistribution@gmail.com <b>↗</b></a><a href="tel:+221773097372"><small>Appelez-nous</small>+221 77 309 73 72 <b>↗</b></a><p><small>Notre adresse</small>Dakar, Sénégal</p></div>
+      <div>
+        <p class="overline">Nous contacter</p>
+        <h2>Une question ou une commande ?</h2>
+        <p>Notre équipe est à votre écoute.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:faithfuldistribution@gmail.com"><small>Écrivez-nous</small>faithfuldistribution@gmail.com <b>↗</b></a>
+        <a href="tel:+221773097372"><small>Appelez-nous</small>+221 77 309 73 72 <b>↗</b></a>
+        <p><small>Notre adresse</small>Dakar, Sénégal</p>
+      </div>
     </section>
   </main>
-  <footer><span>© <span id="year"></span> Faithfuldistribution</span><span>Des produits fidèles à vos saveurs.</span></footer>
+
+  <footer>
+    <span>© <span id="year"></span> Faithfuldistribution</span>
+    <span>Des produits fidèles à vos saveurs.</span>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
