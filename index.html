@@ -3,92 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Faithfuldistribution : produits alimentaires naturels distribués à Dakar.">
+  <meta name="description" content="Faithfuldistribution : distribution de produits alimentaires naturels et authentiques à Dakar.">
   <title>Faithfuldistribution | Produits naturels à Dakar</title>
+
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header Section -->
   <header class="site-header" id="accueil">
-    <a class="logo" href="#accueil" aria-label="Faithfuldistribution, accueil">
-      <img src="logo-faithful.jpeg" alt="Logo Faithfuldistribution">
-      <span>Faithful<em>distribution</em></span>
-    </a>
-    <button class="menu-button" aria-label="Afficher le menu" aria-expanded="false">☰</button>
-    <nav class="navigation">
-      <a href="#produits">Produits</a>
-      <a href="#apropos">Notre engagement</a>
-      <a class="button small" href="#contact">Nous contacter</a>
-    </nav>
+    <div class="container header-container">
+      <a class="logo" href="#accueil" aria-label="Faithfuldistribution - Accueil">
+        <img src="logo-faithful.jpeg" alt="Logo Faithfuldistribution">
+        <span class="brand-name">Faithful<em>distribution</em></span>
+      </a>
+
+      <button class="menu-button" aria-label="Afficher le menu d'astuces" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigation">
+        <a href="#produits" class="nav-link">Nos Produits</a>
+        <a href="#apropos" class="nav-link">Notre Engagement</a>
+        <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-content">
-        <p class="overline">Dakar, Sénégal · Saveurs authentiques</p>
-        <h1>De bons produits,<br><i>fidèles</i> à vos saveurs.</h1>
-        <p>Faithfuldistribution sélectionne et distribue des produits naturels et généreux pour les familles, restaurants et revendeurs.</p>
-        <a class="button" href="#produits">Découvrir nos produits <span>→</span></a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">Dakar, Sénégal · Saveurs Authentiques</span>
+          <h1>De bons produits,<br><em>fidèles</em> à vos origines.</h1>
+          <p class="hero-description">Faithfuldistribution sélectionne et distribue des produits naturels d'exception pour les familles, restaurants et revendeurs exigeants.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#produits">
+              Découvrir la gamme
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-outline" href="#apropos">En savoir plus</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-badge">100% Naturel</div>
+            <div class="hero-card-content">
+              <h3>Ingrédients Choisis avec Soin</h3>
+              <p>Qualité supérieure garantie de la récolte jusqu'à votre table.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-pattern" aria-hidden="true"><div class="hero-circle"></div><span>✦</span><b>Naturel<br>&amp; choisi</b></div>
     </section>
 
+    <!-- Products Section -->
     <section class="products-section" id="produits">
-      <div class="section-title">
-        <div><p class="overline">Notre gamme</p><h2>Nos produits</h2></div>
-        <p>Chaque photo est placée dans une zone dédiée : le produit est intégralement visible, quel que soit son format.</p>
-      </div>
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="overline">Notre Gamme</span>
+            <h2>Produits Sélectionnés</h2>
+          </div>
+          <p class="section-desc">Une variété de céréales, épices et condiments conditionnés pour préserver toute leur fraîcheur et leurs qualités nutritionnelles.</p>
+        </div>
 
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-image"><img src="gari-500g.jpeg" alt="Gari 500 g Faithfuldistribution"></div>
-          <div class="product-details"><span>Céréales &amp; racines</span><h3>Gari 500 g</h3><p>Semoule de manioc naturelle pour vos recettes quotidiennes.</p></div>
-        </article>
-        <article class="product-card">
-          <div class="product-image"><img src="tapioca-500g.jpeg" alt="Tapioca 500 g Faithfuldistribution"></div>
-          <div class="product-details"><span>Céréales &amp; racines</span><h3>Tapioca 500 g</h3><p>Perles de manioc naturelles, douces et gourmandes.</p></div>
-        </article>
-        <article class="product-card">
-          <div class="product-image"><img src="telibo-500g.jpeg" alt="Télibo 500 g Faithfuldistribution"></div>
-          <div class="product-details"><span>Spécialités</span><h3>Télibo 500 g</h3><p>Farine de cossettes d’igname, naturelle et authentique.</p></div>
-        </article>
-        <article class="product-card">
-          <div class="product-image"><img src="jus-noni-naturel.jpeg" alt="Jus de Noni naturel Faithfuldistribution"></div>
-          <div class="product-details"><span>Bien-être</span><h3>Jus de Noni naturel</h3><p>Le fruit à l’état pur, simplement mis en bouteille.</p></div>
-        </article>
-        <article class="product-card">
-          <div class="product-image"><img src="cannelle.jpeg" alt="Cannelle Faithfuldistribution"></div>
-          <div class="product-details"><span>Épices</span><h3>Cannelle</h3><p>Une épice chaude et parfumée pour vos préparations.</p></div>
-        </article>
-        <article class="product-card">
-          <div class="product-image"><img src="melange-epices.jpeg" alt="Mélange d'épices Faithfuldistribution"></div>
-          <div class="product-details"><span>Épices</span><h3>Mélange d’épices</h3><p>Un assemblage savoureux pour toutes vos recettes.</p></div>
-        </article>
-        <article class="product-card">
-          <div class="product-image"><img src="piment-de-table.jpeg" alt="Piment de table Faithfuldistribution"></div>
-          <div class="product-details"><span>Condiments</span><h3>Piment de table</h3><p>Un condiment parfumé pour accompagner vos plats.</p></div>
-        </article>
-        <article class="product-card">
-          <div class="product-image"><img src="puree-de-piment.jpeg" alt="Purée de piment Faithfuldistribution"></div>
-          <div class="product-details"><span>Condiments</span><h3>Purée de piment</h3><p>Une purée savoureuse pour donner du caractère à vos plats.</p></div>
-        </article>
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Céréales & Racines</span>
+              <img src="gari-500g.jpeg" alt="Gari 500g Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Gari 500 g</h3>
+              <p>Semoule de manioc naturelle dorée et croustillante, idéale pour vos recettes quotidiennes.</p>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Céréales & Racines</span>
+              <img src="tapioca-500g.jpeg" alt="Tapioca 500g Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Tapioca 500 g</h3>
+              <p>Perles de manioc douces et gourmandes, indispensables pour vos desserts et bouillies.</p>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Spécialités</span>
+              <img src="telibo-500g.jpeg" alt="Télibo 500g Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Télibo 500 g</h3>
+              <p>Farine de cossettes d'igname pure, travaillée de façon traditionnelle et authentique.</p>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Bien-être</span>
+              <img src="jus-noni-naturel.jpeg" alt="Jus de Noni naturel Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Jus de Noni Naturel</h3>
+              <p>Le fruit à l'état pur sans additifs, embouteillé pour conserver tous ses bienfaits.</p>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Épices</span>
+              <img src="cannelle.jpeg" alt="Cannelle Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Cannelle Moulue</h3>
+              <p>Épice chaude, douce et intensément parfumée pour sublimer toutes vos préparations.</p>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Épices</span>
+              <img src="melange-epices.jpeg" alt="Mélange d'épices Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Mélange d'Épices</h3>
+              <p>Un assemblage équilibré et savoureux pensé pour rehausser vos plats cuisinés.</p>
+            </div>
+          </article>
+
+          <!-- Product 7 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Condiments</span>
+              <img src="piment-de-table.jpeg" alt="Piment de table Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Piment de Table</h3>
+              <p>Un piment délicatement séché et moulu pour assaisonner vos assiettes sur mesure.</p>
+            </div>
+          </article>
+
+          <!-- Product 8 -->
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <span class="product-tag">Condiments</span>
+              <img src="puree-de-piment.jpeg" alt="Purée de piment Faithfuldistribution" loading="lazy">
+            </div>
+            <div class="product-details">
+              <h3>Purée de Piment</h3>
+              <p>Une recette puissante et riche en saveurs pour donner du caractère à vos sauces.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
+    <!-- About Section -->
     <section class="about" id="apropos">
-      <div class="about-mark">F<span>✦</span></div>
-      <div><p class="overline">L’esprit Faithful</p><h2>Une distribution qui reste proche de l’essentiel.</h2><p>Nous mettons à votre disposition des produits de qualité, aux saveurs sincères, avec un service fiable et attentif à Dakar.</p></div>
-      <div class="pillars"><p><b>01</b> Produits sélectionnés</p><p><b>02</b> Saveurs authentiques</p><p><b>03</b> Service de proximité</p></div>
+      <div class="container about-grid">
+        <div class="about-text">
+          <span class="overline">L'esprit Faithful</span>
+          <h2>Une distribution proche de l'essentiel et engagée.</h2>
+          <p>Nous faisons le pont entre les producteurs de qualité et les consommateurs à Dakar en assurant une traçabilité irréprochable et un service de livraison adapté aux professionnels et particuliers.</p>
+        </div>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-num">01</span>
+            <h4>Sélection Rigoureuse</h4>
+            <p>Des matières premières naturelles contrôlées à la source.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-num">02</span>
+            <h4>Saveurs Authentiques</h4>
+            <p>Respect des procédés traditionnels sans dénaturer le goût.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-num">03</span>
+            <h4>Service Proche</h4>
+            <p>Une réactivité et un suivi dédié pour toutes vos commandes.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact" id="contact">
-      <div><p class="overline">Nous contacter</p><h2>Une question ou une commande ?</h2><p>Notre équipe est à votre écoute.</p></div>
-      <div class="contact-links"><a href="mailto:faithfuldistribution@gmail.com"><small>Écrivez-nous</small>faithfuldistribution@gmail.com <b>↗</b></a><a href="tel:+221773097372"><small>Appelez-nous</small>+221 77 309 73 72 <b>↗</b></a><p><small>Notre adresse</small>Dakar, Sénégal</p></div>
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <span class="overline">Nous Contacter</span>
+            <h2>Une question ou un projet de commande ?</h2>
+            <p>Notre équipe commerciale est disponible pour vous répondre et vous accompagner.</p>
+          </div>
+          <div class="contact-cards">
+            <a href="mailto:faithfuldistribution@gmail.com" class="contact-card">
+              <div class="contact-icon">✉</div>
+              <div>
+                <small>Écrivez-nous</small>
+                <strong>faithfuldistribution@gmail.com</strong>
+              </div>
+            </a>
+            <a href="tel:+221773097372" class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div>
+                <small>Appelez-nous</small>
+                <strong>+221 77 309 73 72</strong>
+              </div>
+            </a>
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <small>Localisation</small>
+                <strong>Dakar, Sénégal</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer><span>© <span id="year"></span> Faithfuldistribution</span><span>Des produits fidèles à vos saveurs.</span></footer>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© <span id="year">2026</span> Faithfuldistribution. Tous droits réservés.</p>
+      <p>Des produits fidèles à vos saveurs.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
